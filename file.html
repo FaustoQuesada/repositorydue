@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mio Progetto Web</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f4f9;
+    }
+    .card {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .display {
+      font-size: 3rem;
+      margin: 20px 0;
+      font-weight: bold;
+      color: #333;
+    }
+    button {
+      font-size: 1.2rem;
+      padding: 10px 20px;
+      margin: 5px;
+      border: none;
+      border-radius: 6px;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>Contatore Interattivo</h1>
+    <p>Un semplice esempio con HTML, CSS e JavaScript.</p>
+    <div class="display" id="counter">0</div>
+    <div class="buttons">
+      <button onclick="decrementa()">-</button>
+      <button onclick="resetta()">Reset</button>
+      <button onclick="incrementa()">+</button>
+    </div>
+  </div>
+
+  <!-- Collegamento al file JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
